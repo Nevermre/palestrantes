@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.casadoempresrio">
+
+    <application
+        android:name=".ppv.ferramentas.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_conversation"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_conversation"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ppv.activitys.PublicarPalestra"></activity>
+        <activity
+            android:name=".ppv.activitys.MinhasPalestras"
+            android:parentActivityName=".ppv.activitys.PerfilUsuario">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.casadoempresrio.ppv.activitys.PerfilUsuario" />
+        </activity>
+        <activity
+            android:name=".ppv.activitys.PalestrasPendentes"
+            android:parentActivityName=".ppv.activitys.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.casadoempresrio.ppv.activitys.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ppv.activitys.PerfilUsuario"
+            android:parentActivityName=".ppv.activitys.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.casadoempresrio.ppv.activitys.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ppv.activitys.CadastrarUsuario"
+            android:parentActivityName=".ppv.activitys.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.casadoempresrio.ppv.activitys.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ppv.activitys.LoginActivity"
+            android:parentActivityName=".ppv.activitys.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.casadoempresrio.ppv.activitys.MainActivity" />
+        </activity>
+        <activity android:name=".ppv.activitys.VisualizaPalestra" />
+        <activity
+            android:name=".ppv.activitys.CadastrarPalestra"
+            android:parentActivityName=".ppv.activitys.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.casadoempresrio.ppv.activitys.MainActivity" />
+        </activity>
+        <activity android:name=".ppv.activitys.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

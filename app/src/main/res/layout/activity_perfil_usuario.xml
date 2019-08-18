@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ppv.activitys.PerfilUsuario"
+    android:orientation="vertical">
+
+    <!-- barra de tarefas -->
+    <include
+        android:id="@+id/my_toolbar_perfil_usuario"
+        layout="@layout/barra_tarefas" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/perfil_usuario_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="casual"
+                android:text="Teste Ususario"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/AntiqueWhite"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="minhasPalestras"
+                android:background="@drawable/text_click_background">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/file_document"
+                    android:layout_gravity="center_vertical|center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="monospace"
+                    android:gravity="start"
+                    android:text="Minhas Palestras"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_right"
+                    android:layout_gravity="center_vertical|center_horizontal"/>
+                
+            </LinearLayout>
+
+            <include layout="@layout/menu_divisor_80" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="configuracoes"
+                android:background="@drawable/text_click_background">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/settings"
+                    android:layout_gravity="center_vertical|center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="monospace"
+                    android:gravity="start"
+                    android:text="Configurações"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_right"
+                    android:layout_gravity="center_vertical|center_horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/menu_divisor_80" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="ajuda"
+                android:background="@drawable/text_click_background">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/help_circle"
+                    android:layout_gravity="center_vertical|center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="monospace"
+                    android:gravity="start"
+                    android:text="Ajuda"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_right"
+                    android:layout_gravity="center_vertical|center_horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/menu_divisor_80" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

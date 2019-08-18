@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/miRefresh"
+        android:icon="@drawable/baseline_refresh_black_18dp"
+        android:title="Atualizar"
+        app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/miMinhaConta"
+        android:icon="@drawable/outline_account_circle_black_18dp"
+        android:title="Minha Conta"
+        app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/miDeslogar"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Sair"
+        app:showAsAction="never"></item>
+</menu>

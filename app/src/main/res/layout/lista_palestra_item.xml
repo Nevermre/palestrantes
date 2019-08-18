@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp">
+
+    <ImageView
+        android:id="@+id/lista_palestra_imagem"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/android_green"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/lista_palestra_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Titúlo"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/lista_palestra_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="descricao"
+            android:textSize="12dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

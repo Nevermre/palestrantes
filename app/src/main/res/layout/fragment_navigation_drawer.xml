@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topBlock"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5"/>
+
+            <LinearLayout
+                android:id="@+id/navigation_logado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="#cbefeb">
+
+                <TextView
+                    android:id="@+id/navigation_logado_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical"
+                    android:text="Nome do usuario logado"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#666"
+                    android:textSize="14sp"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5"/>
+
+            <LinearLayout
+                android:id="@+id/navigation_cadastrar_palestra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:clickable="true"
+                android:onClick="cadastrarPalestra">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_playlist_add_black_18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="Cadastrar proposta de Palestra"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navigation_palestras_pendentes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:clickable="true"
+                android:onClick="palestrasPendentes">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_list_black_18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="Palestras propostas"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#666" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5"/>
+
+            <LinearLayout
+                android:id="@+id/navigation_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:clickable="true"
+                android:onClick="configuracoes">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/twotone_settings_black_18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="Configurações"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navigation_sair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:clickable="true"
+                android:onClick="sair">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/round_exit_to_app_black_18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="Sair"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#666" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

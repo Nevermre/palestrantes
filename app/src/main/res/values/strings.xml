@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Casa do Empresário - PPV</string>
+    <string name="cadastrar_palestra">Cadastrar Palestra</string>
+    <string name="titulo">Título: </string>
+    <string name="conteudo">Conteúdo: </string>
+    <string name="descricao">Descrição: </string>
+    <string name="duracao">Duração: </string>
+    <string name="material_necessario">Mat. Necessário: </string>
+    <string name="publico_alvo">Público Alvo: </string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="categoria">Categoria: </string>
+    <string name="filtrar">Filtrar:</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
+    <string name="drawer_open">Abrir gaveta</string>
+    <string name="drawer_close">Fechar gaveta</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="login">login</string>
+    <string name="tipo_conta">Tipo de Conta:</string>
+    <string name="primeiro_nome">Primeiro Nome</string>
+    <string name="ultimo_nome">Último Nome</string>
+    <string name="sexo">Sexo:</string>
+    <string name="entidade_nome">Nome da Entidade</string>
+    <string name="organizar_palestra">Organizar Palestra</string>
+    <string name="telfone">Telefone</string>
+    <string name="assunto">Assunto:</string>
+    <string name="descricao_objetiva">Descrição Objetiva:</string>
+    <string name="publicar_palestra">Publicar Palestra</string>
+    <string name="entidade_organizando">Entidade Organizando:</string>
+    <string name="aprovar_entidade">Aprovar Entidade</string>
+    <string name="palestrante">Palestrante:</string>
+    <string name="data">Data:</string>
+    <string name="website">Website:</string>
+</resources>
